@@ -62,3 +62,13 @@ Replace the backend instance:
 
 - [Tutorial: Get started with Amazon EC2 Linux instances - Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 - [AWS Skill Builder: EC2 Basics](https://explore.skillbuilder.aws/learn/course/external/view/elearning/12471/amazon-ec2-basics)
+- [How to set environment variables in systemd](https://serverfault.com/questions/413397/how-to-set-environment-variable-in-systemd-service/413408#413408)
+- [Downloading a JAR from GitHub](https://stackoverflow.com/questions/62014168/downloading-jar-file-from-github)
+- [Troubleshooting authentication errors with Postgres](https://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-failed-for-user-postgres)
+- [Listing databases in PostgreSQL using psql command](https://www.postgresqltutorial.com/postgresql-administration/postgresql-show-databases/)
+
+Useful commands:
+- Viewing logs of a systemd service: `journalctl _SYSTEMD_UNIT=myapp.service`
+- Reload systemd configurations: `sudo systemctl daemon-reload`
+- Checking the status of a systemd service: `sudo systemctl status myapp.service`
+

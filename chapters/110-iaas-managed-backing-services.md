@@ -48,3 +48,4 @@ SPRING_SESSION_REDIS_CONFIGUREACTION=none
 - [Amazon ElastiCache - An Introduction (cloudacademy.com)](https://cloudacademy.com/blog/amazon-elasticache/)
 - [Stateless vs. Stateful Microservices](https://sparkequation.com/2020/11/12/stateless-vs-stateful-microservices-addressing-the-benefits-and-quandaries/)
 - [DevOps: Pets vs Cattle](https://iamondemand.com/blog/devops-concepts-pets-vs-cattle/)
+- [Amazon RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.DBVersions)

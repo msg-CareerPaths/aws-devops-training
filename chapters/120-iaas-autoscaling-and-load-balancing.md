@@ -57,3 +57,4 @@ Updating the application version via user data:
 
 - [AWS Elastic Load Balancing Introduction](https://www.youtube.com/watch?v=qpHLRc4Qt1E)
 - [Amazon EC2 Auto Scaling benefits - Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html)
+- [Writing a heredoc in a bash script](https://stackoverflow.com/questions/2953081/how-can-i-write-a-heredoc-to-a-file-in-bash-script)
