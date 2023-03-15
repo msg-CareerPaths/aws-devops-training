@@ -15,17 +15,20 @@ Publishing orders to a queue
  - Grant permissions to the backend to publish messages to this queue via IaC (via the [taskRole](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) in the ECS task definition).
  - Adjust the backend to publish messages to this queue after receiving an order.
 
-Processing orders through a lambda
- - Create a new Lambda via IaC and write a small snippet of code that just logs the received messages.
+Processing orders through a Lambda
+ - Create a new Lambda via IaC.
+ - have the Lambda consume messages from SQS.
+ - Write a small snippet of code that just logs the received messages in the Lambda.
  - Deploy. 
  - Open the app, check that it still works. 
- - Create an order. Check that the Lambda was invoked with the order details.
+ - Create an order. 
+ - Check that the Lambda was invoked with the order details.
 
 Sending emails
  - Verify a couple of email address with Amazon SES (e.g. your work email + your personal email). 
  - Grant the Lambda privileges to send emails through SES via IaC.
- - Add two environment variables to the lambda: "TO_EMAIL_ADDRESS" and "FROM_EMAIL_ADDRESS". 
- - Adjust the code send an email to a fixed email address notifying (e.g. the store owner) of the new order(s). Use these values from the env vars above for the from/to fields.
+ - Add two environment variables to the Lambda: "TO_EMAIL_ADDRESS" and "FROM_EMAIL_ADDRESS". 
+ - Adjust the Lambda code to send an email to a fixed email address (e.g. the store owner) whenever the Lambda receives an order over SQS. Use these values from the env vars above for the from/to fields.
  - Deploy. Open the app, check that it still works. 
  - Create an order. Check that the SQS message was sent, the Lambda was invoked and the Lambda sent an email to your address.
 
