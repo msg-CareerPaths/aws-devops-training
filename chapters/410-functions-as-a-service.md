@@ -17,7 +17,7 @@ Publishing orders to a queue
 
 Processing orders through a Lambda
  - Create a new Lambda via IaC.
- - have the Lambda consume messages from SQS.
+ - Have the Lambda consume messages from SQS.
  - Write a small snippet of code that just logs the received messages in the Lambda.
  - Deploy. 
  - Open the app, check that it still works. 
