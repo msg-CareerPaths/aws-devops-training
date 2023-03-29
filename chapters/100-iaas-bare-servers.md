@@ -9,6 +9,8 @@ Goal: Run our application on cloud infrastructure, using basic, bare-bones Linux
 
 ## Online Shop
 
+![Application Diagram](./diagrams/100.drawio.svg)
+
 Setting up the network:
 
  - [Create a new VPC](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html#create-vpc-and-other-resources) with a 10.0.0.0/16 CIDR, then create 2 "public" subnets (10.0.1.0/24 & 10.0.2.0/24) and 2 "private" subnets (10.0.3.0/24 & 10.0.4.0/24). 

@@ -18,6 +18,8 @@ The training also assumes a certain degree of independence - i.e. you'll need to
 
 You first need to get familiar with the application that we will deploy on AWS:
 
+![Application Diagram](./diagrams/000.drawio.svg)
+
 - [Register a new free AWS account](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#sign-up-for-aws). You can also use an existing account or a company-provided one.
 - Use the "us-east-1" region.
 - Later in the training, when you're launching a EC2 instance, RDS database or Elasticache cluster, first check if the instance type you're choosing is included in the Free Tier:

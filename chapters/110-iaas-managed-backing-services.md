@@ -9,6 +9,8 @@ Goal: Move the database and session storage out of our Linux server, such that w
 
 ## Online Shop
 
+![Application Diagram](./diagrams/110.drawio.svg)
+
 Persisting data in RDS:
 
 - [Launch a new RDS instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateDBInstance.html):

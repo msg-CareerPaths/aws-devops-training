@@ -11,6 +11,9 @@ Goal: Make the application self-heal (i.e. automatically replace crashed servers
 
 ## Online Shop
 
+
+![Application Diagram](./diagrams/120.drawio.svg)
+
 Replace the static backend with an ASG:
 
 - Create a new AMI from your latest backend instance, stop the instance and release the Elastic IP. 
