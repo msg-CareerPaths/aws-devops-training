@@ -16,4 +16,5 @@
    1. [Serverless frontend hosting](./chapters/400-serverless-frontend-hosting.md)
    1. [Functions-as-a-service](./chapters/410-functions-as-a-service.md)
    1. [(Optional) Serverless containers](./chapters/420-opt-serverless-containers.md)
+   1. [(Optional) Serverless authentication](./chapters/430-opt-serverless-authentication.md)
 5. [Logging, tracing, metrics](./chapters/500-monitoring-tracing-logging.md)

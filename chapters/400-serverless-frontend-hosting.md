@@ -5,15 +5,19 @@ Goal: Reduce the load on the backend by hosting the frontend separately.
 ## Required Reading
 
 - [Use CloudFront to serve a static website hosted on Amazon S3](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/)
-- [Invalidating files - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
+- [Improve Your Architecture With Amazon CloudFront](https://catalog.us-east-1.prod.workshops.aws/workshops/4557215e-2a5c-4522-a69b-8d058aba088c/en-US)
 
 ## Online Shop
 
 Set up the CDN infrastructure
 - Create an S3 bucket and a CloudFront distribution for serving the UI via IaC.
-- Integrate the two via an S3 origin. 
-- Adjust the CI/CD to build the UI such that it calls the backend via its ALB URL instead of relying on the UI being hosted on the same host as the backend (you need to fill the "REACT_APP_BASE_URL" env var during the UI build). 
-- Set up the distribution to point the "default root object" to index.html (such that opening the distribution url <https://dxyz.cloudfront.net> opens the index.html).
+- Set up the distribution to point the "default root object" to index.html (such that opening the root distribution url <https://dxyz.cloudfront.net>/ opens the index.html).
+- Integrate the S3 bucket and the distribution via an S3 origin. 
+- Use the origin in the distribution's default cache behavior.
+
+Exposing the ALB through CloudFront
+- Create another origin on the distribution, pointing to the ALB.
+- Add cache behaviors to the distribution to forward all the traffic matching the `/login` and `/api/*` path patterns towards the ALB.
 
 Publish the app to the CDN
 - Adjust the CI/CD pipeline to:
@@ -28,3 +32,6 @@ Publish the app to the CDN
 - [Restricting access to an Amazon S3 origin - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html)
 - [Specifying a default root object - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DefaultRootObject.html)
 - [How to Preserve SPA route path in the browser using AWS CloudFront](https://dev.to/aws-builders/how-to-preserve-spa-route-path-in-the-browser-using-aws-cloudfront-oai)
+- [Using various origins with CloudFront distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html#concept_elb_origin)
+- [Creating a CloudFront Distribution for Amazon EC2 and ALB](https://www.stormit.cloud/blog/cloudfront-distribution-for-amazon-ec2-alb/)
+- [Invalidating files - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)

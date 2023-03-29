@@ -42,6 +42,10 @@ Raising alarms
 - Deploy, login to the app and place an order.
 - Check that you got an alarm via email. 
 
+Starting the Open Telemetry Collector sidecar
+- Adjust the task definition for the backend to include an extra container, running the Open Telemetry Collector
+- Adjust the task role permissions to allow creating log groups, pushing logs, pushing metrics and creating traces.
+
 Publishing custom metrics
 - Configure AWS Distro for OpenTelemetry in the backend and publish a new custom metric counter each time a new order is created. 
 - Make sure to grant the backend the right to push metric data ("cloudwatch:PutMetricData"). 
