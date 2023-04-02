@@ -10,6 +10,8 @@ Goal: Extend the application functionality by introducing a Lambda-based worker 
 
 ## Online Shop
 
+![Application Diagram](./diagrams/410.drawio.svg)
+
 Publishing orders to a queue
  - Create a new SQS queue via IaC.
  - Grant permissions to the backend to publish messages to this queue via IaC (via the [taskRole](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) in the ECS task definition).

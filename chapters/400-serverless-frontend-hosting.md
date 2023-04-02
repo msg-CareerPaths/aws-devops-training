@@ -9,6 +9,9 @@ Goal: Reduce the load on the backend by hosting the frontend separately.
 
 ## Online Shop
 
+
+![Application Diagram](./diagrams/400.drawio.svg)
+
 Set up the CDN infrastructure
 - Create an S3 bucket and a CloudFront distribution for serving the UI via IaC.
 - Set up the distribution to point the "default root object" to index.html (such that opening the root distribution url <https://dxyz.cloudfront.net>/ opens the index.html).

@@ -9,6 +9,9 @@ Goal: move the user authentication and management outside of the application.
 - [How to secure Spring boot REST API endpoints with Amazon Cognito](https://dev.to/aws-builders/how-to-secure-spring-boot-rest-api-endpoints-with-amazon-cognito-2fkl)
 
 ## Online Shop
+
+![Application Diagram](./diagrams/430.drawio.svg)
+
 Create a Cognito User Pool via IaC
 - Adjust the IaC stack to create a new Cognito User Pool.
 - Also create a couple of test users. You can do it via IaC (terraform has built-in resources for this; for CDK you'd likely need to use a custom resource) or by hand.

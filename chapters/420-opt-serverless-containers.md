@@ -8,7 +8,10 @@ Goal: get rid of the EC2 infrastructure completely, host the app of a "serverles
 - [What is AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 ## Online Shop
-Migrate to fargate
+
+![Application Diagram](./diagrams/420.drawio.svg)
+
+Migrate to Fargate
 - Adjust the task definition IaC to specify a [taskExecutionRole](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_execution_IAM_role.html) that has at least the permissions to pull the docker images from ECR. 
 - Adjust the task definition IaC to use the awsvpc network mode.
 - Adjust the task definition IaC to allow the FARGATE launch type.

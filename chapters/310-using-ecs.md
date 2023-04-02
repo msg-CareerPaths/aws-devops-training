@@ -8,6 +8,8 @@ Goal: Run the container via a managed service, instead of manually installing do
 
 ## Online Shop
 
+![Application Diagram](./diagrams/310.drawio.svg)
+
 Replace bare EC2s with ECS
 - Adjust the IaC stack to replace the ASG and EC2 instances with (note that for CDK, you can directly use the ApplicationLoadBalancedEc2Service higher-order construct):
   - An EC2-backed ECS cluster. Make sure that the EC2 instance(s) have the [ecsInstanceRole](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html) role attached to them, such that they can pull images from ECR.

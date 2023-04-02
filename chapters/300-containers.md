@@ -11,6 +11,8 @@ Goal: Containerize the application such that its runtime environment is consiste
 
 ## Online Shop
 
+![Application Diagram](./diagrams/300.drawio.svg)
+
 Wrapping the app in a Docker image:
 
 - Create a Dockerfile that can build an image for running the backend:
