@@ -31,6 +31,8 @@ Deploy the IaC via CI/CD
 ## Further Resources
 
 - [Gentle Introduction to How AWS ECS Works with Example Tutorial | by Tung Nguyen | BoltOps | Medium](https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d)
-- [Deploying an AWS ECS Cluster of EC2 Instances With Terraform](https://medium.com/swlh/creating-an-aws-ecs-cluster-of-ec2-instances-with-terraform-85a10b5cfbe3)
+- [Deploying an AWS ECS Cluster of EC2 Instances With Terraform](https://medium.com/swlh/creating-an-aws-ecs-cluster-of-ec2-instances-with-terraform-85a10b5cfbe3), [Create an AWS ECS Cluster Using Terraform](https://dev.to/thnery/create-an-aws-ecs-cluster-using-terraform-g80)
 - [ECS with EC2 + ALB example for AWS CDK](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/ecs/ecs-service-with-advanced-alb-config)
 - [How can I pass secrets or sensitive information securely to containers in an Amazon ECS task?](https://aws.amazon.com/premiumsupport/knowledge-center/ecs-data-security-container-task/)
+- [Example ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html)
+- [https://gaunacode.com/deploying-terraform-at-scale-with-github-actions](https://gaunacode.com/deploying-terraform-at-scale-with-github-actions) / [Secure AWS-CDK deployments with GitHub Actions](https://dev.to/simonireilly/secure-aws-cdk-deployments-with-github-actions-3jfk)

@@ -38,3 +38,4 @@ Publish the app to the CDN
 - [Using various origins with CloudFront distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html#concept_elb_origin)
 - [Creating a CloudFront Distribution for Amazon EC2 and ALB](https://www.stormit.cloud/blog/cloudfront-distribution-for-amazon-ec2-alb/)
 - [Invalidating files - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
+- [Provision a static website on AWS S3 and Cloudfront using terraform](https://towardsaws.com/provision-a-static-website-on-aws-s3-and-cloudfront-using-terraform-d8004a8f629a) / [Deploying a static website using S3 and CloudFront - CDK](https://aws-cdk.com/deploying-a-static-website-using-s3-and-cloudfront)

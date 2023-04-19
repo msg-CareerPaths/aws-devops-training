@@ -54,3 +54,5 @@ Using the docker image on the EC2 servers:
 - [A Docker Tutorial for Beginners (docker-curriculum.com)](https://docker-curriculum.com/)
 - [How Amazon Elastic Container Registry works with IAM](https://docs.aws.amazon.com/AmazonECR/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)
 - [Using Amazon ECR with the AWS CLI](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html)
+- [Attach IAM role to Amazon EC2 instance using Terraform](https://skundunotes.com/2021/11/16/attach-iam-role-to-aws-ec2-instance-using-terraform/) / [Attach IAM role to Amazon EC2 instance using CDK](https://bobbyhadz.com/blog/aws-cdk-ec2-instance-example)
+- [GitHub Actions: Using OpenID Connect (OIDC) to deploy securely to AWS](https://www.youtube.com/watch?v=k2Tv-EJl7V4&t=185s)

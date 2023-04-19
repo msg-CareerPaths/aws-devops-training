@@ -39,3 +39,4 @@ Further Resources:
 - [Using Lambda with Amazon SQS - AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
 - [How do I send email using Lambda and Amazon SES?](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-email-ses/)
 - [Sending, receiving, and deleting Amazon Simple Queue Service messages - AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/examples-sqs-messages.html)
+- [Managing Amazon SQS Queues in Java](https://www.baeldung.com/aws-queues-java)
