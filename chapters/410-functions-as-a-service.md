@@ -10,7 +10,7 @@ Goal: Extend the application functionality by introducing a Lambda-based worker 
 
 ## Online Shop
 
-![Application Diagram](./diagrams/410.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/410.drawio.svg)
 
 Publishing orders to a queue
  - Create a new SQS queue via IaC.

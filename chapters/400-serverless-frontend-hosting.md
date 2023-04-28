@@ -10,7 +10,7 @@ Goal: Reduce the load on the backend by hosting the frontend separately.
 ## Online Shop
 
 
-![Application Diagram](./diagrams/400.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/400.drawio.svg)
 
 Set up the CDN infrastructure
 - Create an S3 bucket and a CloudFront distribution for serving the UI via IaC.

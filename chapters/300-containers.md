@@ -11,7 +11,7 @@ Goal: Containerize the application such that its runtime environment is consiste
 
 ## Online Shop
 
-![Application Diagram](./diagrams/300.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/300.drawio.svg)
 
 Wrapping the app in a Docker image:
 

@@ -9,7 +9,7 @@ Goal: Move the database and session storage out of our Linux server, such that w
 
 ## Online Shop
 
-![Application Diagram](./diagrams/110.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/110.drawio.svg)
 
 Persisting data in RDS:
 

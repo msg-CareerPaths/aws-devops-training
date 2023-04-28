@@ -12,7 +12,7 @@ Goal: Make the application self-heal (i.e. automatically replace crashed servers
 ## Online Shop
 
 
-![Application Diagram](./diagrams/120.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/120.drawio.svg)
 
 Replace the static backend with an ASG:
 

@@ -9,7 +9,7 @@ Goal: Run our application on cloud infrastructure, using basic, bare-bones Linux
 
 ## Online Shop
 
-![Application Diagram](./diagrams/100.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/100.drawio.svg)
 
 Setting up the network:
 

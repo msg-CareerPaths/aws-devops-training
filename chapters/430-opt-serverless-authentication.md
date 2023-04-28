@@ -10,7 +10,7 @@ Goal: move the user authentication and management outside of the application.
 
 ## Online Shop
 
-![Application Diagram](./diagrams/430.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/430.drawio.svg)
 
 Create a Cognito User Pool via IaC
 - Adjust the IaC stack to create a new Cognito User Pool.

@@ -8,7 +8,7 @@ Goal: Run the container via a managed service, instead of manually installing do
 
 ## Online Shop
 
-![Application Diagram](./diagrams/310.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/310.drawio.svg)
 
 Replace bare EC2s with ECS
 - Adjust the IaC stack to replace the ASG and EC2 instances with (note that for CDK, you can directly use the ApplicationLoadBalancedEc2Service higher-order construct):

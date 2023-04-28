@@ -9,7 +9,7 @@ Goal: get rid of the EC2 infrastructure completely, host the app of a "serverles
 
 ## Online Shop
 
-![Application Diagram](./diagrams/420.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/420.drawio.svg)
 
 Migrate to Fargate
 - Adjust the task definition IaC to specify a [taskExecutionRole](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_execution_IAM_role.html) that has at least the permissions to pull the docker images from ECR. 

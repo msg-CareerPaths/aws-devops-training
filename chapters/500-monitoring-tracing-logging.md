@@ -13,7 +13,7 @@ Goal: Instrument the backend to easily obtain insights about the application hea
 
 ## Online Shop
 
-![Application Diagram](./diagrams/500.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/500.drawio.svg)
 
 Logging to CloudWatch
 - Adjust the IaC stack to use the aws-logs logging driver for the ECS task of the backend. 

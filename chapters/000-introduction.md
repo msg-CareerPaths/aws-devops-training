@@ -18,7 +18,7 @@ The training also assumes a certain degree of independence - i.e. you'll need to
 
 You first need to get familiar with the application that we will deploy on AWS:
 
-![Application Diagram](./diagrams/000.drawio.svg)
+![Application Diagram](https://raw.githubusercontent.com/msg-CareerPaths/aws-devops-training/master/chapters/diagrams/000.drawio.svg)
 
 - [Register a new free AWS account](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html#sign-up-for-aws). You can also use an existing account or a company-provided one.
 - Use the "us-east-1" region.
