@@ -48,6 +48,6 @@ SPRING_SESSION_REDIS_CONFIGUREACTION=none
 ## Further Resources
 
 - [Amazon ElastiCache - An Introduction (cloudacademy.com)](https://cloudacademy.com/blog/amazon-elasticache/)
-- [Stateless vs. Stateful Microservices](https://sparkequation.com/2020/11/12/stateless-vs-stateful-microservices-addressing-the-benefits-and-quandaries/)
+- [Stateless vs. Stateful Microservices](https://www.linkedin.com/pulse/stateful-vs-stateless-applications-differences-pros-cons-neal-davis-febge#:~:text=Stateful%20apps%20may%20take%20longer,request%20independently%20and%20in%20parallel.)
 - [DevOps: Pets vs Cattle](https://iamondemand.com/blog/devops-concepts-pets-vs-cattle/)
 - [Amazon RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.DBVersions)
