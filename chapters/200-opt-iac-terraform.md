@@ -48,11 +48,9 @@ Preventing data loss
 
 ## Further Resources
 
-- [What Is Terraform Used For? The 3 Main Use Cases. (openupthecloud.com)](https://openupthecloud.com/what-is-terraform-used-for/)
-- [The Six Fundamentals of Terraform](https://openupthecloud.com/the-six-fundamentals-of-terraform/)
-- [Docs overview | hashicorp/aws | Terraform Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- [Manage AWS Auto Scaling Groups with Terraform](https://developer.hashicorp.com/terraform/tutorials/aws/aws-asg)
+- [Terraform AWS VPC – Complete Tutorial](https://hands-on.cloud/terraform-aws-vpc-tutorial/)
+- [How to Build AWS VPC Using Terraform – Step By Step](https://javatodev.com/how-to-build-aws-vpc-using-terraform-step-by-step/)
 - [EC2 autoscaling health checks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html)
-- [Autoscaling Groups with Terraform on AWS Part 3: Elastic Load Balancer and health check](https://egkatzioura.com/2020/01/19/autoscaling-groups-with-terraform-on-aws-part-3-elastic-load-balancer-and-health-check/)
 - [Fetch the latest AMI in AWS using Terraform](https://blog.knoldus.com/fetch-the-latest-ami-in-aws-using-terraform/)
 - [Manage AWS RDS Instances with Terraform](https://developer.hashicorp.com/terraform/tutorials/aws/aws-rds)
+- [Docs overview - Terraform Registry](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)

@@ -70,3 +70,4 @@ Recording traces
 - [Amazon SQS and AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-sqs.html)
 - [Java tracing walkthrough](https://catalog.us-east-1.prod.workshops.aws/workshops/31676d37-bbe9-4992-9cd1-ceae13c5116c/en-US/aws-managed-oss/adot/javawalkthrough)
 - [ECS Task Definition example for the OTEL sidecar](https://github.com/aws-observability/aws-otel-collector/blob/main/examples/ecs/aws-cloudwatch/ecs-ec2-sidecar.json)
+- [Using AWS Distro for OpenTelemetry to instrument your Java application](https://stackoverflow.com/collectives/aws/articles/74659994/using-aws-distro-for-opentelemetry-to-instrument-your-java-application)

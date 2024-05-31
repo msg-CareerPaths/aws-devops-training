@@ -13,8 +13,8 @@ Goal: Run the container via a managed service, instead of manually installing do
 Replace bare EC2s with ECS
 - Adjust the IaC stack to replace the ASG and EC2 instances with (note that for CDK, you can directly use the ApplicationLoadBalancedEc2Service higher-order construct):
   - An EC2-backed ECS cluster. Make sure that the EC2 instance(s) have the [ecsInstanceRole](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html) role attached to them, such that they can pull images from ECR.
-  - The cluster must have at least 1 ECS-optimized Amazon Linux2 EC2 instance beneath it.
-  - A task definition that defines the container, image tag, environment variables, the port (8080) that is exposed and the resources needed by the container (at least 0.5 vCPU and 768 RAM).
+  - The cluster must have at least 1 ECS-optimized Amazon Linux2 EC2 instance beneath it, linked via an [ECS capacity provider](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html).
+  - A task definition that defines the container, image tag, environment variables, the port (8080) that is exposed and the resources needed by the container (at least 0.5 vCPU and 768 RAM). Use the `host` [network mode](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html).
   - Store the DB password in a SSM Parameter or Secret Manager Secret (trial is just 30 days) and reference it inside the task definition (instead of hardcoding the password). 
   - An ECS service that uses this task definition inside your ECS cluster.
 - Register the ECS service as the target for the existing ALB.
@@ -30,9 +30,9 @@ Deploy the IaC via CI/CD
 
 ## Further Resources
 
-- [Gentle Introduction to How AWS ECS Works with Example Tutorial | by Tung Nguyen | BoltOps | Medium](https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d)
+- [Deploying Docker containers on AWS ECS](https://dev.to/abhixsh/docker-for-the-absolute-beginner-3h1p)
 - [Create an AWS ECS Cluster Using Terraform](https://dev.to/thnery/create-an-aws-ecs-cluster-using-terraform-g80)
 - [ECS with EC2 + ALB example for AWS CDK](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/ecs/ecs-service-with-advanced-alb-config)
 - [How can I pass secrets or sensitive information securely to containers in an Amazon ECS task?](https://aws.amazon.com/premiumsupport/knowledge-center/ecs-data-security-container-task/)
 - [Example ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html)
-- [https://gaunacode.com/deploying-terraform-at-scale-with-github-actions](https://gaunacode.com/deploying-terraform-at-scale-with-github-actions) / [Secure AWS-CDK deployments with GitHub Actions](https://dev.to/simonireilly/secure-aws-cdk-deployments-with-github-actions-3jfk)
+- [Deploying Terraform at scale with GitHub Actions](https://gaunacode.com/deploying-terraform-at-scale-with-github-actions) / [Secure AWS-CDK deployments with GitHub Actions](https://dev.to/simonireilly/secure-aws-cdk-deployments-with-github-actions-3jfk)

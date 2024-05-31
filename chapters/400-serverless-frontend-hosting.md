@@ -20,7 +20,7 @@ Set up the CDN infrastructure
 
 Exposing the ALB through CloudFront
 - Create another origin on the distribution, pointing to the ALB.
-- Add cache behaviors to the distribution to forward all the traffic matching the `/login` and `/api/*` path patterns towards the ALB.
+- Add cache behaviors to the distribution to forward all the traffic matching the `/login` and `/api/*` path patterns towards the ALB. Forward all the headers, quary parameters and cookies.
 
 Publish the app to the CDN
 - Adjust the CI/CD pipeline to:
@@ -39,3 +39,4 @@ Publish the app to the CDN
 - [Creating a CloudFront Distribution for Amazon EC2 and ALB](https://www.stormit.cloud/blog/cloudfront-distribution-for-amazon-ec2-alb/)
 - [Invalidating files - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
 - [Provision a static website on AWS S3 and Cloudfront using terraform](https://towardsaws.com/provision-a-static-website-on-aws-s3-and-cloudfront-using-terraform-d8004a8f629a) / [Deploying a static website using S3 and CloudFront - CDK](https://aws-cdk.com/deploying-a-static-website-using-s3-and-cloudfront)
+- [CloudFront - How to forward all request headers to the origin](https://stackoverflow.com/a/60004288)

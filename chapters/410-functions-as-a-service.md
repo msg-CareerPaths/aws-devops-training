@@ -15,7 +15,7 @@ Goal: Extend the application functionality by introducing a Lambda-based worker 
 Publishing orders to a queue
  - Create a new SQS queue via IaC.
  - Grant permissions to the backend to publish messages to this queue via IaC (via the [taskRole](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) in the ECS task definition).
- - Adjust the backend to publish messages to this queue after receiving an order.
+ - Adjust the backend to publish messages to this queue after receiving an order. Note that your instance will either need internet access or you must create an [SQS VPC Endpoint](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-internetwork-traffic-privacy.html#sqs-vpc-endpoints) within your VPC.
 
 Processing orders through a Lambda
  - Create a new Lambda via IaC.

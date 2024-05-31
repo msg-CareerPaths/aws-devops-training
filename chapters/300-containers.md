@@ -49,10 +49,10 @@ Using the docker image on the EC2 servers:
 
 ## Further Resources
 
-- [Introduction to Containers and Docker | endjin](https://endjin.com/blog/2022/01/introduction-to-containers-and-docker)
-- [Run a Simple .jar Application in a Docker Container - DZone DevOps](https://dzone.com/articles/run-simple-jar-application-in-docker-container-1)
-- [A Docker Tutorial for Beginners (docker-curriculum.com)](https://docker-curriculum.com/)
+- [Docker for the Absolute Beginner](https://dev.to/abhixsh/docker-for-the-absolute-beginner-3h1p)
+- [Docker Multi-stage Build: How to Make Your Docker Image Smaller](https://www.cherryservers.com/blog/docker-multistage-build)
+- [Multi-stage Docker build for React and Spring](https://www.sbegaudeau.com/2020/05/04/multi-stage-docker-build-for-react-and-spring.html)
 - [How Amazon Elastic Container Registry works with IAM](https://docs.aws.amazon.com/AmazonECR/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)
 - [Using Amazon ECR with the AWS CLI](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html)
 - [Attach IAM role to Amazon EC2 instance using Terraform](https://skundunotes.com/2021/11/16/attach-iam-role-to-aws-ec2-instance-using-terraform/) / [Attach IAM role to Amazon EC2 instance using CDK](https://bobbyhadz.com/blog/aws-cdk-ec2-instance-example)
-- [GitHub Actions: Using OpenID Connect (OIDC) to deploy securely to AWS](https://www.youtube.com/watch?v=k2Tv-EJl7V4&t=185s)
+- [GitHub Actions: Using OpenID Connect (OIDC) to deploy securely to AWS](https://awstip.com/using-github-actions-oidc-to-run-terraform-in-aws-31ba395518cb)
